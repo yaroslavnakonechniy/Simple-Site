@@ -273,3 +273,202 @@ button {
     font-size: 13px;
     line-height: 1.65;
 }
+
+
+/* Великі екрани */
+@media (max-width: 1200px) { 
+    .container{
+      width: 992px;
+      padding: 30px;
+    }
+
+  .wrap__photo {
+    width: 900px;
+    margin-inline:auto;
+
+  }
+
+  .wrap__photo::after{
+    top: 35%;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 992px) { 
+
+  .container{
+    width: 760px;
+  }
+
+  .header{
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .header__title{
+    margin-top: 100px;
+  }
+
+  .about-me{
+    padding-top: 80px;
+  }
+
+   .wrap{
+    padding-bottom: 0;
+   }
+
+  .wrap__photo {
+    width: 700px;
+    height: 400px;
+  }
+
+  .wrap__photo::after{
+    top: 40%;
+    width: 60px;
+    height: 60px;
+
+  }
+ }
+
+ @media (max-width: 768px) { 
+  .container{
+    width: 460px;
+  }
+
+  .navigation__list{
+    display: none;
+  }
+
+  .navigation-burger{
+    display: flex;
+    position: relative;
+
+  }
+
+  .navigation-burger::after, 
+  .navigation-burger::before, 
+  .navigation-burger span {
+    
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--black);
+  }
+
+  .navigation-burger::after{
+    top: 12px;
+    left: 0;
+  }
+
+  .navigation-burger::before{
+    top: -12px;
+    left: 0;
+  }
+
+  .navigation-burger span{
+    top: 0;
+    left: 0;
+  }
+
+  .description{
+    width: 400px;
+  }
+
+  .wrap__photo {
+    width: 350px;
+    height: 250px;
+  }
+
+  .wrap__photo::after{
+    top: 35%;
+    width: 50px;
+    height: 50px;
+
+  }
+
+ }
+
+
+/* Телефони */
+@media (max-width: 480px) { 
+  .container{
+    width: 295px;
+    padding: 0;
+  }
+
+  .navigation{
+    display: flex;
+    text-align: center;
+  }
+
+  .header{
+    text-align: center;
+  }
+
+  .header__title{
+    margin-top: 40px;
+  }
+
+  .navigation-burger::after{
+    top: 12px;
+    left: 130px;
+  }
+
+  .navigation-burger::before{
+    top: -12px;
+    left: 130px;
+  }
+
+  .navigation-burger span{
+    top: 0;
+    left: 130px;
+  }
+
+  .description{
+    width: 270px;
+    margin-inline:  auto;
+  }
+
+  .numbers{
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .numbers__container{
+    flex-direction: column;
+    place-content: center;
+
+  }
+
+  .numbers__container:last-child{
+    padding-bottom: 0;
+  }
+
+  .numbers__project-card{
+    margin-bottom: 40px;
+  }
+  
+  .wrap{
+    padding-top: 50px;
+  }
+
+ .wrap__photo {
+    width: 235px;
+    height: 150px;
+  }
+
+  .footer{
+    text-align: center;
+  }
+
+ }
+
+/* Планшети */
+
+
+/* Ноутбуки */
+
