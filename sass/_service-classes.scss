@@ -1,0 +1,109 @@
+
+@use 'variables' as *;
+@use 'fonts' as *;
+@use 'mixin' as *;
+
+/*
+** reset
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+** normalize
+*/
+html {
+  font-size: $font-size;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+h1 {
+  line-height: 1.64;
+  font-size: 3rem;
+}
+
+h2 {
+  line-height: 1;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3125rem;
+}
+
+p {
+  line-height: 1.64;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  line-height: 1.75;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: auto;
+
+  @include respond-to(xl){
+    width: 992px;
+    padding: 30px;
+  }
+
+  @include respond-to(lg){
+    width: 760px;
+  }
+
+  @include respond-to(md){
+    width: 460px;
+  }
+
+  @include respond-to(xs){
+    width: 295px;
+  }
+}
+
+.description {
+  width: 540px;
+  color: $grey-dark;
+
+  @include respond-to(md){
+    width: 400px;
+  }
+
+  @include respond-to(xs){
+    width: 270px;
+    margin-inline:  auto;
+  }
+}
+
+.title {
+  margin-bottom: 50px;
+  color: $black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center{
+    margin-inline: auto;
+}
