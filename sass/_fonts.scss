@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Roboto/Regular/Roboto-Regular.eot'), /* IE9 Compat Modes */
+       url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Roboto/Regular/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Roboto/Regular/Roboto-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url("../fonts/Roboto/Regular/Roboto-Regular.otf") format("opentype"); /* OTF/TTF are often used as fallbacks for older or less-supported browsers */
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-style: normal;
+  src: url('../fonts/'), /* IE9 Compat Modes */
+       url('../fonts/Roboto/Medium/Roboto-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Roboto/Medium/Roboto-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Roboto/Medium/Roboto-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+       url("../fonts/Roboto/Medium/Roboto-Medium.otf") format("opentype"); /* OTF/TTF are often used as fallbacks for older or less-supported browsers */
+}
