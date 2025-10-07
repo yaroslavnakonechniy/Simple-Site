@@ -399,7 +399,7 @@ button {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background: url("../../images/play-button.png") center/contain no-repeat;
+  background: url("../images/play-button.png") center/contain no-repeat;
 }
 @media (max-width: 1200px) {
   .wrap__photo::after {
