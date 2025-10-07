@@ -1,13 +1,8 @@
-$breakpoints: (
-  xs: 480px,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-);
+@use 'sass:map';
+@use './variables' as *;
 
 @mixin respond-to($key) {
-  $size: map-get($breakpoints, $key);
+  $size: map.get($breakpoints, $key);
 
   @if $size == null {
     @warn "⚠️ Breakpoint `#{$key}` not found in $breakpoints map.";
