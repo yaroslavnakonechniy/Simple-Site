@@ -1,0 +1,25 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.container {
+  max-width: 1120px;
+  margin-inline: auto;
+
+  @include respond-to(xl){
+    width: 992px;
+    padding: 30px;
+  }
+
+  @include respond-to(lg){
+    width: 760px;
+  }
+
+  @include respond-to(md){
+    width: 460px;
+  }
+
+  @include respond-to(xs){
+    width: 295px;
+  }
+}

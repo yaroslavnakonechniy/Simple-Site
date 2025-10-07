@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Roboto";
   font-weight: 400;
@@ -10,18 +16,6 @@
   font-style: normal;
   src: url("../fonts/"), url("../fonts/Roboto/Medium/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Medium/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Medium/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto/Medium/Roboto-Medium.otf") format("opentype"); /* OTF/TTF are often used as fallbacks for older or less-supported browsers */
 }
-/*
-** reset
-*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/*
-** normalize
-*/
 html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -66,32 +60,6 @@ button {
   cursor: pointer;
 }
 
-.container {
-  max-width: 1120px;
-  margin-inline: auto;
-}
-@media (max-width: 1200px) {
-  .container {
-    width: 992px;
-    padding: 30px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    width: 760px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 460px;
-  }
-}
-@media (max-width: 480px) {
-  .container {
-    width: 295px;
-  }
-}
-
 .description {
   width: 540px;
   color: #727272;
@@ -121,9 +89,16 @@ button {
   margin-inline: auto;
 }
 
-/*
-** Navigation
-*/
+.btn {
+  width: 225px;
+  height: 65px;
+  background-color: #34547A;
+  font-size: 0.88rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2.02px;
+}
+
 .header {
   padding: 79px 0 141px 0;
   background-color: #EEEFF1;
@@ -155,15 +130,8 @@ button {
   }
 }
 .header__btn {
-  width: 225px;
-  height: 65px;
   margin-top: 57.5px;
   padding-top: 3.5px;
-  background-color: #34547A;
-  font-size: 0.88rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2.02px;
 }
 
 /*
@@ -258,6 +226,52 @@ button {
   color: #000000;
 }
 
+.footer {
+  background: #34547A;
+  padding: 50px 0;
+  color: #ffffff;
+}
+@media (max-width: 480px) {
+  .footer {
+    text-align: center;
+  }
+}
+.footer__name {
+  font-size: 21px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.footer__copyright {
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 992px;
+    padding: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 760px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 460px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 295px;
+  }
+}
+
 .about-me {
   padding: 112px 0 100px 0;
 }
@@ -329,9 +343,6 @@ button {
   color: #ffffff;
 }
 
-/*
-** wrap 
-*/
 .wrap {
   padding: 100px 0 100px 0;
 }
@@ -388,7 +399,7 @@ button {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background: url("../images/play-button.png") center/contain no-repeat;
+  background: url("../../images/play-button.png") center/contain no-repeat;
 }
 @media (max-width: 1200px) {
   .wrap__photo::after {
@@ -410,27 +421,4 @@ button {
     width: 50px;
     height: 50px;
   }
-}
-
-/*
-** footer
-*/
-.footer {
-  background: #34547A;
-  padding: 50px 0;
-  color: #ffffff;
-}
-@media (max-width: 480px) {
-  .footer {
-    text-align: center;
-  }
-}
-.footer__name {
-  font-size: 21px;
-  line-height: 1;
-  margin-bottom: 20px;
-}
-.footer__copyright {
-  font-size: 13px;
-  line-height: 1.65;
 }/*# sourceMappingURL=main.css.map */

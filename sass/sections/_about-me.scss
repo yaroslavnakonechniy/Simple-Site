@@ -1,0 +1,11 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.about-me {
+  padding: 112px 0 100px 0;
+
+  @include respond-to(lg){
+    padding-top: 80px;
+  }
+}

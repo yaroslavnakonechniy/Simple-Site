@@ -1,0 +1,131 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.header {
+  padding: 79px 0 141px 0;
+  background-color: $grey-light;
+
+  @include respond-to(lg){
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  @include respond-to(xs){
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 144px;
+    margin-bottom: 34px;
+    color: $black;
+
+    @include respond-to(lg){
+      margin-top: 100px;
+    }
+
+    @include respond-to(xs){
+      margin-top: 40px;
+    }
+  }
+
+  &__btn {
+    margin-top: 57.5px;
+    padding-top: 3.5px;
+  }
+}
+/*
+** Navigation
+*/
+.navigation {
+  text-transform: uppercase;
+  
+  @include respond-to(xs){
+    display: flex;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+
+    @include respond-to(md){
+      display: none;
+    }
+  }
+
+  &__burger{
+    @include respond-to(md){
+      display: flex;
+      position: relative;
+
+      &::after, &::before, span{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: $black;
+      }
+
+      &::after{
+        top: 12px;
+        left: 0;
+
+        @include respond-to(xs){
+          top: 12px;
+          left: 100px;
+        }
+      }
+        
+      &::before{
+        top: -12px;
+        left: 0;
+
+        @include respond-to(xs){
+          top: -12px;
+          left: 100px;
+        }
+      }
+
+      span{
+        top: 0;
+        left: 0;
+
+        @include respond-to(xs){
+          top: 0;
+          left: 100px;
+        }
+      }
+    }
+  }
+
+  &__item--active &__link {
+    color: $primary-color;
+  }
+
+  &__item:first-child {
+    padding-right: 22px;
+  }
+
+  &__item ~ &__item {
+    padding: 0 25px;
+  } 
+
+  &__item:nth-child(2) {
+    padding-right: 25px;
+  }
+
+  &__item:nth-child(3) {
+    padding-right: 32px;
+  }
+
+  &__item:nth-child(4) {
+    padding-right: 21px;
+  }
+
+  &__link {
+    letter-spacing: 2.1px;
+    color: $black;
+  }
+}
